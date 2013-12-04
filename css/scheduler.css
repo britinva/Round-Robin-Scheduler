@@ -1,0 +1,107 @@
+body {
+	padding: 20px 0 40px;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+a {
+	color: #3498db;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	background-color: #3498db;
+}
+
+/* Main marketing message and sign up button */
+.hero-unit {
+	padding: 40px 0 60px;
+	background: #3498db;
+	color: #fff;	
+	-webkit-border-radius: 0;	
+	-moz-border-radius: 0;
+	border-radius: 0;	
+}
+
+.hero-unit h1 {
+	font-size: 75px;
+	line-height: 1.05em;
+	font-weight: normal;
+	text-align: center;
+}
+
+.main-heading {
+	padding: 10px 0 15px;
+	background: #3498db;
+	color: #fff;	
+	-webkit-border-radius: 0;	
+	-moz-border-radius: 0;
+	border-radius: 0;
+	margin-bottom: 30px;
+}
+
+.main-heading h1 {
+	font-size: 75px;
+	line-height: 1.05em;
+	font-weight: normal;
+	text-align: center;
+}
+
+h3 {
+	margin: 0 0 10px;
+}
+
+/* Supporting marketing content */
+.marketing {
+	margin: 40px 0;
+}
+
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+textarea {min-height: 10em; width: 95%;}
+.marketing {overflow: hidden;}
+.form-col {background-color: #ecf0f1; padding: 20px 20px 1000em; margin-bottom: -1000em;}
+
+@media (max-width: 767px) {
+	.marketing {margin: 0;}
+	.form-col {background-color: #ecf0f1; padding-bottom: 2%; margin-bottom: 5%;}
+}
+
+.marketing h3 {text-align: center; font-weight: normal; font-size: 32px; color: #777;}
+.teams .icon-stack-base, .teams h3 {color: #2ecc71;}
+.frequency .icon-stack-base, .frequency h3 {color: #e67e22;}
+.shuffle .icon-stack-base, .shuffle h3 {color: #f1c40f;}
+.btn-primary {background: #3498db;}
+.btn-primary:hover, .btn-primary:active {background: #2980b9;}
+
+.table {
+	margin-bottom: 50px;
+}
+
+.team-schedule td:nth-child(1) {
+	width: 20%;
+}
+.team-schedule td:nth-child(3) {
+	width: 30%;
+}
+
+.team-schedule td:nth-child(2),
+.date-schedule td {
+	width: 50%;
+}
+
+.question {
+	margin-bottom: 2em;
+}
+
+@media only print {
+	.nav-pills, .nav-tabs {display: none;}
+	.table {page-break-after: always;}
+}
