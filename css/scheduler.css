@@ -23,16 +23,10 @@ a {
 	padding: 40px 0 60px;
 	background: #3498db;
 	color: #fff;	
+	text-align: center;
 	-webkit-border-radius: 0;	
 	-moz-border-radius: 0;
 	border-radius: 0;	
-}
-
-.hero-unit h1 {
-	font-size: 75px;
-	line-height: 1.05em;
-	font-weight: normal;
-	text-align: center;
 }
 
 .main-heading {

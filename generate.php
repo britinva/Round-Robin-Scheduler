@@ -9,9 +9,12 @@ session_start();
 $tourneyName = $_POST['tourneyName'];
 $teams = explode("\n", trim($_POST['teams']));
 $times = $_POST['multiples'];
-if(isset($_POST['shuffle'])){
+if(isset($_POST['shuffle']))
+{
 	$league = new Season($tourneyName, $teams, $times, true);
-} else {
+} 
+else 
+{
 	$league = new Season($tourneyName, $teams, $times);
 }
 $_SESSION["league"] = $league;

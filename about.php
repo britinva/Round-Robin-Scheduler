@@ -58,5 +58,6 @@ session_start();
 			</div>
 		</div>
 	</div>
+	<?php include_once("includes/analytics.php"); ?>
 </body>
 </html>

@@ -23,7 +23,6 @@ session_start();
 					class="disabled"
 					<?php endif; ?>
 				><a href="result.php">Schedule</a></li>
-	
 			</ul>
 			<h3 class="muted">Round Robin</h3>
 		</div>
@@ -31,7 +30,7 @@ session_start();
 	
 	<div class="hero-unit">
 		<div class="container">
-			<h1>Create your schedule quickly and easily</h1>
+			<h1>Create your schedule quickly and&nbsp;easily</h1>
 		</div>
 	</div>
 	
@@ -39,58 +38,24 @@ session_start();
 		<form id="scheduler" action="generate.php" method="post" onsubmit="return validate()">
 	
 			<div class="row-fluid marketing">
-				<div class="form-col span12">
-					<h3>Name Your Tournament</h3>
+				<div class="form-col span8 offset2 teams">
+					<h3>The grand prize</h3>
 					<p class="text-center"><input type="text" name="tourneyName" id="tourneyName" placeholder="Tournament Name" class="span8" /></p>
-				</div>
-			</div>
-	
-			<div class="row-fluid marketing">
-				<div class="form-col span4 teams">
-					<div class="text-center">
-						<span class="icon-stack icon-4x">
-							<i class="icon-circle icon-stack-base"></i>
-							<i class="icon-user icon-light"></i>
-						</span>
-					</div>
-					<h3>Who’s Playing?</h3>
+					<h3>Who’s competing?</h3>
 					<p>
 						<textarea name="teams" id="teams" placeholder="Teams (one per line)" class="expanding"></textarea>
 					</p>
-				</div>
-				
-				<div class="form-col span4 frequency">
-					<div class="text-center">
-						<span class="icon-stack icon-4x">
-							<i class="icon-circle icon-stack-base"></i>
-							<i class="icon-repeat icon-light"></i>
-						</span>
-					</div>
 					<h3>How often?</h3>
-					<p>
+					<p class="offset4 span4">
 						<label class="radio" for="x1"><input type="radio" id="x1" name="multiples" value="1" /> 1x</label>
 						<label class="radio" for="x2"><input type="radio" id="x2" name="multiples" value="2" checked="checked" /> 2x (Home & Away)</label>
-						<label class="radio" for="x4"><input type="radio" id="x4" name="multiples" value="4" /> 4x (2x Home & Away)</label>
+						<label class="radio" for="x4"><input type="radio" id="x4" name="multiples" value="4" /> 4x (2x Home &amp; Away)</label>
 					</p>
-				</div>
-				
-				<div class="form-col span4 shuffle">			
-					<div class="text-center">
-						<span class="icon-stack icon-4x">
-							<i class="icon-circle icon-stack-base"></i>
-							<i class="icon-random icon-light"></i>
-						</span>
-					</div>
-					<h3>Mix it up?</h3>
-					<p>
-						<label class="checkbox" for="shuffle"><input type="checkbox" name="shuffle" id="shuffle" /> Shuffle teams</label>
-						<span class="help-block">Useful if you schedule multiple seasons and want the match ups to be less predictable.</span>
-					</p>
-				</div>			
+				</div>				
+				<input type="checkbox" name="shuffle" id="shuffle" class="hidden" checked />
 			</div>
-			
-			<div class="row-fluid marketing">
-				<div class="offset2 span8">		
+			<div class="row-fluid">
+				<div class="offset3 span6">		
 					<input type="submit" class="btn btn-large btn-primary btn-block" style="" value="Create Schedule" />
 				</div>
 			</div>
@@ -115,6 +80,6 @@ session_start();
 
 		}
 	</script>
-
+	<?php include_once("includes/analytics.php"); ?>
 </body>
 </html>
